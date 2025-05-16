@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>랜딩페이지</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="sub-bg-color">
+      <header>
+        <h1>
+          <a href="#">
+            <img
+              src="img/logo.svg"
+              alt="호두 로고 이미지 홈 버튼"
+              class="logo"
+            />
+          </a>
+        </h1>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+        <button class="btn-type-1 download li-down">Download</button>
+
+        <!-- 햄버거 버튼 (모바일 전용) -->
+        <button class="hamburger-btn" aria-label="모바일 메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- 모바일 메뉴 (오른쪽 슬라이드) -->
+        <nav class="mobile-menu">
+          <button class="close-btn" aria-label="모바일 메뉴 닫기">
+            <img src="img/arrow-right.svg" alt="모바일 메뉴 닫기 버튼" />
+          </button>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+          <button class="btn-type-1 download">Download</button>
+        </nav>
+        <div class="menu-overlay"></div>
+      </header>
+      <section>
+        <div class="section-1-contents">
+          <h2>
+            Lorem Ipsum is simply <br />
+            dummy text of the printing and
+          </h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and <br />
+            typesetting industry.<br />
+            Lorem Ipsum has been the industry's standard dummy text <br />
+            ever since the 1500s, when an unknown
+          </p>
+          <button class="btn-type-1 download">Download</button>
+        </div>
+        <img src="img/box-cat.png" alt="박스를 둘러쓴 고양이 이미지" />
+      </section>
+    </div>
+    <main>
+      <section>
+        <img src="img/img_4.jpg" alt="눕눕고양이 이미지" />
+        <div class="rest-cat">
+          <h2 class="rest-cat-h2">
+            Lorem Ipsum is simply dummy text of the printing and dummy text
+          </h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>dummy text of the printing and dummy</h2>
+        <p>
+          Lorem Ipsum is simply <em>dummy text</em> of the printing and
+          typesetting industry.
+          <br />
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown
+        </p>
+        <article class="cat-img">
+          <img src="img/img_1.jpg" alt="캣타워 위에 있는 고양이 이미지" />
+          <img src="img/img_2.jpg" alt="캣타워 위에 있는 고양이 이미지" />
+          <img src="img/img_3.jpg" alt="캣타워 위에 있는 고양이 이미지" />
+        </article>
+        <article>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.<br />Lorem Ipsum has been the industry's standard dummy
+            text ever since the 1500s, when an unknown<br />
+            Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+          <button class="btn-type-1 download">Learn More</button>
+        </article>
+      </section>
+      <section class="blog-post-area">
+        <div>
+          <h2>Subscribe to our Blog post</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. <br />Lorem Ipsum has been the industry's standard dummy
+            text
+          </p>
+        </div>
+        <form action="subscribe">
+          <div class="mail-icon"></div>
+          <input
+            type="email"
+            name="subscribe-email"
+            id="subscribe-email"
+            placeholder="Enter your e-mail address"
+          />
+          <button class="btn-type-1 download subscribe">Subscribe</button>
+        </form>
+      </section>
+      <div class="hodu-bg-img"></div>
+    </main>
+    <div class="btn-top"></div>
+    <footer>
+      <div class="footer-group">
+        <img src="img/logo.svg" alt="호두 로고 이미지" class="footer-logo" />
+        <ul class="sns-btn-group">
+          <li>
+            <a
+              ><img src="img/icon-blog.png" alt="네이버 블로그 바로가기 버튼"
+            /></a>
+          </li>
+          <li>
+            <a
+              ><img src="img/icon-insta.png" alt="인스타그램 바로가기 버튼"
+            /></a>
+          </li>
+          <li>
+            <a
+              ><img src="img/icon-facebook.png" alt="페이스북 바로가기 버튼"
+            /></a>
+          </li>
+          <li>
+            <a><img src="img/icon-youtube.png" alt="유뷰트 바로가기 버튼" /></a>
+          </li>
+        </ul>
+      </div>
+      <ul class="mobile-footer-menu">
+        <li>
+          <a>About</a>
+        </li>
+        <li>
+          <a>Blog</a>
+        </li>
+        <li>
+          <a>Support</a>
+        </li>
+        <li>
+          <a>Terms of Use</a>
+        </li>
+      </ul>
+    </footer>
+    <!-- 모달 -->
+    <div class="modal-overlay">
+      <div class="modal">
+        <img src="img/cat-subscribe.png" alt="고양이 얼굴 이미지" />
+        <h2>Thank you!</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+        <button class="ok-btn">OK! I Love HODU</button>
+      </div>
+    </div>
+    <script src="js/hodu.js"></script>
+  </body>
+</html>

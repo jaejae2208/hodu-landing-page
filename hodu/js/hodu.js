@@ -58,19 +58,54 @@ form.addEventListener("submit", function (e) {
 
   // 모달 표시
   modalOverlay.classList.add("show");
+  lockBodyScroll(); // 여기서만 스크롤 막기
 });
 
 // OK 버튼 클릭 시 모달 닫기
-okBtn.addEventListener("click", function () {
-  modalOverlay.classList.remove("show");
-});
+okBtn.addEventListener("click", closeModal);
 
 // 오버레이 클릭 시 모달 닫기
 modalOverlay.addEventListener("click", function (e) {
   if (e.target === modalOverlay) {
-    modalOverlay.classList.remove("show");
+    closeModal();
   }
 });
+
+// 모달 닫기 함수
+function closeModal() {
+  modalOverlay.classList.remove("show");
+  unlockBodyScroll(); // 여기서만 스크롤 복원
+
+  // input 내용 비우기
+  emailInput.value = "";
+}
+
+// 스크롤 막기
+function lockBodyScroll() {
+  const scrollY = window.scrollY;
+  document.body.style.position = "fixed";
+  document.body.style.top = `-${scrollY}px`;
+  document.body.style.left = "0";
+  document.body.style.right = "0";
+  document.body.style.width = "100%";
+  document.body.style.overflowY = "scroll";
+  document.body.dataset.scrollY = scrollY;
+}
+
+// 스크롤 복원
+function unlockBodyScroll() {
+  const scrollY = document.body.dataset.scrollY
+    ? parseInt(document.body.dataset.scrollY, 10)
+    : 0;
+  document.body.style.position = "";
+  document.body.style.top = "";
+  document.body.style.left = "";
+  document.body.style.right = "";
+  document.body.style.width = "";
+  document.body.style.overflowY = "";
+  window.scrollTo(0, scrollY);
+  delete document.body.dataset.scrollY;
+}
 
 // 햄버거 시작
 const hamburgerBtn = document.querySelector(".hamburger-btn");

@@ -611,17 +611,11 @@ footer > div > ul > li > a > img {
     height: 76px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     padding: 24px 20px;
   }
 
-  .logo {
-    width: 90px;
-    height: 28px;
-  }
-
   .nav-list {
-    margin-left: 50px;
+    margin-left: 236px;
   }
 
   /* 헤더 밑 박스 쓴 고양이 */
@@ -895,42 +889,19 @@ footer > div > ul > li > a > img {
     padding: 0 2px;
     overflow-y: auto;
   }
-
-  /* 모바일 햄버거 
-  .nav-list,
-  .btn-type-1.download.li-down {
-    display: none;
-  }
-
-  .hamburger-btn {
-    display: flex;
-  }
-
-  .mobile-menu {
-    display: block;
-  }*/
 }
 
 /* 반응형(모바일) */
 @media (max-width: 800px) {
-  .body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .sub-bg-color {
     max-height: 794px;
   }
 
   header {
-    margin-top: 0px;
     width: 390px;
-    height: 76px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 20px;
   }
 
   .logo {
